@@ -467,3 +467,73 @@ label {
   color: #666;
   cursor: pointer;
 }
+
+@media screen and (max-width: 769px) {
+  body {
+    background: #fff;
+  }
+  thead {
+    display: none;
+  }
+  br {
+    display: none;
+  }
+  .wizard > .content > .body label {
+    /* display: inline-block; */
+    margin-bottom: 0.5em;
+    position: relative;
+    top: -13px;
+    left: 25px;
+  }
+  .mi-quiz__question-container td {
+    font-size: 16px;
+  }
+
+  .mi-quiz__question-container td {
+    border: none;
+  }
+  .mi-quiz__question-container {
+    border: none;
+  }
+  * {
+    overflow: visible !important;
+  }
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .col-lg-12 {
+    /* position: relative; */
+    /* width: 100%; */
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .row {
+    width: 100vw;
+    margin: 0;
+  }
+  .mi-quiz__question-container td {
+    padding: 4px 17px;
+  }
+
+  .wizard > .actions > ul {
+    position: fixed;
+    bottom: 7px;
+    right: -3px;
+    top: 0;
+  }
+
+  .wizard > .content {
+    margin: 0;
+  }
+  ul[role="menu"] {
+    /*
+    display: none !important;*/
+    opacity: 0;
+  }
+  .visible {
+    opacity: 100 !important;
+  }
+}
