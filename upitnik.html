@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container h-100 align-items-center d-flex">
+        <div class="row rounded" >
+            <div class="col-lg-12"><!--
+                Total Score:
+                <input type="text" name="sum" />
+                <p>Total: £ <span id="total">0</span></p>
+                <form id="example-advanced-form" action="#">-->
+                    <div id="example-basic">
+                        <h3>Keyboard</h3>
+                        <section>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Ne slažem se <br> uopšte</th>
+                                            <th>Donekle <br> se slažem</th>
+                                            <th>Uglavnom <br>se slažem</th>
+                                            <th>U potpunosti <br> se slažem</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Linguistic">Moje
+                                                dete zna mnogo reči
+                                                i/ili rado uči nove
+                                                reči.<label for="time-spent-0" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                                    <div class="options">
+                                            <td><input class="calc required" type="radio" id="time-spent-0-0" name="1"
+                                                    value="0" required=""><label for="time-spent-0-0" name="time-spent-0">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-1" name="1"
+                                                    value="1" required=""><label for="time-spent-0-1" name="time-spent-0">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-2" name="1"
+                                                    value="2" required=""><label for="time-spent-0-2" name="time-spent-0">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-3" name="1"
+                                                    value="3" required=""><label for="time-spent-0-3" name="time-spent-0">A
+                                                    lot</label></td></div>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Visual-Spatial">Moje
+                                                dete pamti stvari kada
+                                                čita ili pravi beleške.<label for="time-spent-1" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-0" name="2"
+                                                    value="0" required=""><label for="time-spent-1-0" name="time-spent-1">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-1" name="2"
+                                                    value="1" required=""><label for="time-spent-1-1" name="time-spent-1">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-2" name="2"
+                                                    value="2" required=""><label for="time-spent-1-2" name="time-spent-1">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-3" name="2"
+                                                    value="3" required=""><label for="time-spent-1-3" name="time-spent-1">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Logical-Mathematical">Pričanje
+                                                ili pisanje priča ili
+                                                poezije mom detetu
+                                                pričinjava
+                                                zadovoljstvo.<label for="time-spent-2" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-0" name="3"
+                                                    value="0" required=""><label for="time-spent-2-0" name="time-spent-2">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-1" name="3"
+                                                    value="1" required=""><label for="time-spent-2-1" name="time-spent-2">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-2" name="3"
+                                                    value="2" required=""><label for="time-spent-2-2" name="time-spent-2">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-3" name="3"
+                                                    value="3" required=""><label for="time-spent-2-3" name="time-spent-2">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete voli da uči strane
+                                                jezike.<label for="time-spent-3" class="mi-quiz__error-label">This
+                                                    field
+                                                    is required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-0" name="4"
+                                                    value="0" required=""><label for="time-spent-3-0" name="time-spent-3">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-1" name="4"
+                                                    value="1" required=""><label for="time-spent-3-1" name="time-spent-3">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-2" name="4"
+                                                    value="2" required=""><label for="time-spent-3-2" name="time-spent-3">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-3" name="4"
+                                                    value="3" required=""><label for="time-spent-3-3" name="time-spent-3">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Skoro
+                                                svakog dana moje dete
+                                                čita iz zadovoljstva.<label for="time-spent-4" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-0" name="5"
+                                                    value="0" required=""><label for="time-spent-4-0" name="time-spent-4">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-1" name="5"
+                                                    value="1" required=""><label for="time-spent-4-1" name="time-spent-4">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-2" name="5"
+                                                    value="2" required=""><label for="time-spent-4-2" name="time-spent-4">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-3" name="5"
+                                                    value="3" required=""><label for="time-spent-4-3" name="time-spent-4">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Bodily-Kinesthetic">Moje
+                                                dete je dobro u
+                                                rešavanju jezičkih
+                                                mozgalica
+                                                poput ukrštenica i
+                                                anagrama.<label for="time-spent-5" class="mi-quiz__error-label">This
+                                                    field
+                                                    is required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-0" name="6"
+                                                    value="0" required=""><label for="time-spent-5-0" name="time-spent-5">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-1" name="6"
+                                                    value="1" required=""><label for="time-spent-5-1" name="time-spent-5">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-2" name="6"
+                                                    value="2" required=""><label for="time-spent-5-2" name="time-spent-5">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-3" name="6"
+                                                    value="3" required=""><label for="time-spent-5-3" name="time-spent-5">A
+                                                    lot</label></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <h3>Effects</h3>
+                        <section>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Ne slažem se <br> uopšte</th>
+                                            <th>Donekle <br> se slažem</th>
+                                            <th>Uglavnom <br>se slažem</th>
+                                            <th>U potpunosti <br> se slažem</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Linguistic">Omiljeni
+                                                predmet mom detetu je
+                                                matematika.<label for="time-spent-0" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-0" name="7"
+                                                    value="0" required=""><label for="time-spent-0-0" name="time-spent-0">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-1" name="7"
+                                                    value="1" required=""><label for="time-spent-0-1" name="time-spent-0">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-2" name="7"
+                                                    value="2" required=""><label for="time-spent-0-2" name="time-spent-0">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-3" name="7"
+                                                    value="3" required=""><label for="time-spent-0-3" name="time-spent-0">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Visual-Spatial">Moje
+                                                dete lako računa iz
+                                                glave.<label for="time-spent-1" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-0" name="8"
+                                                    value="0" required=""><label for="time-spent-1-0" name="time-spent-1">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-1" name="8"
+                                                    value="1" required=""><label for="time-spent-1-1" name="time-spent-1">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-2" name="8"
+                                                    value="2" required=""><label for="time-spent-1-2" name="time-spent-1">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-3" name="8"
+                                                    value="3" required=""><label for="time-spent-1-3" name="time-spent-1">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Logical-Mathematical">Mom
+                                                detetu su logičke
+                                                mozgalice zabavne i ono
+                                                ih
+                                                vešto rešava.<label for="time-spent-2" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-0" name="9"
+                                                    value="0" required=""><label for="time-spent-2-0" name="time-spent-2">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-1" name="9"
+                                                    value="1" required=""><label for="time-spent-2-1" name="time-spent-2">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-2" name="9"
+                                                    value="2" required=""><label for="time-spent-2-2" name="time-spent-2">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-3" name="9"
+                                                    value="3" required=""><label for="time-spent-2-3" name="time-spent-2">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete probleme rešava
+                                                postupno i logički.<label for="time-spent-3" class="mi-quiz__error-label">This
+                                                    field
+                                                    is required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-0" name="10"
+                                                    value="0" required=""><label for="time-spent-3-0" name="time-spent-3">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-1" name="10"
+                                                    value="1" required=""><label for="time-spent-3-1" name="time-spent-3">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-2" name="10"
+                                                    value="2" required=""><label for="time-spent-3-2" name="time-spent-3">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-3" name="10"
+                                                    value="3" required=""><label for="time-spent-3-3" name="time-spent-3">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete rado igra
+                                                strateške igre poput
+                                                šaha.<label for="time-spent-4" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-0" name="11"
+                                                    value="0" required=""><label for="time-spent-4-0" name="time-spent-4">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-1" name="11"
+                                                    value="1" required=""><label for="time-spent-4-1" name="time-spent-4">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-2" name="11"
+                                                    value="2" required=""><label for="time-spent-4-2" name="time-spent-4">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-3" name="11"
+                                                    value="3" required=""><label for="time-spent-4-3" name="time-spent-4">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Bodily-Kinesthetic">Moje
+                                                dete voli da organizuje
+                                                stvari po logičkim
+                                                kategorijama.<label for="time-spent-5" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-0" name="12"
+                                                    value="0" required=""><label for="time-spent-5-0" name="time-spent-5">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-1" name="12"
+                                                    value="1" required=""><label for="time-spent-5-1" name="time-spent-5">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-2" name="12"
+                                                    value="2" required=""><label for="time-spent-5-2" name="time-spent-5">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-3" name="12"
+                                                    value="3" required=""><label for="time-spent-5-3" name="time-spent-5">A
+                                                    lot</label></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <h3>Pager</h3>
+                        <section>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Ne slažem se <br> uopšte</th>
+                                            <th>Donekle <br> se slažem</th>
+                                            <th>Uglavnom <br>se slažem</th>
+                                            <th>U potpunosti <br> se slažem</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Linguistic">Moje
+                                                dete voli da peva ili
+                                                svira neki muzički
+                                                instrument.<label for="time-spent-0" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-0" name="13"
+                                                    value="0" required=""><label for="time-spent-0-0" name="time-spent-0">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-1" name="13"
+                                                    value="1" required=""><label for="time-spent-0-1" name="time-spent-0">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-2" name="13"
+                                                    value="2" required=""><label for="time-spent-0-2" name="time-spent-0">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-3" name="13"
+                                                    value="3" required=""><label for="time-spent-0-3" name="time-spent-0">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Visual-Spatial">Moje
+                                                dete ne može da zamisli
+                                                dan bez slušanja
+                                                muzike.<label for="time-spent-1" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-0" name="14"
+                                                    value="0" required=""><label for="time-spent-1-0" name="time-spent-1">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-1" name="14"
+                                                    value="1" required=""><label for="time-spent-1-1" name="time-spent-1">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-2" name="14"
+                                                    value="2" required=""><label for="time-spent-1-2" name="time-spent-1">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-3" name="14"
+                                                    value="3" required=""><label for="time-spent-1-3" name="time-spent-1">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Logical-Mathematical">Moje
+                                                dete s lakoćom hvata
+                                                ritam.<label for="time-spent-2" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-0" name="15"
+                                                    value="0" required=""><label for="time-spent-2-0" name="time-spent-2">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-1" name="15"
+                                                    value="1" required=""><label for="time-spent-2-1" name="time-spent-2">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-2" name="15"
+                                                    value="2" required=""><label for="time-spent-2-2" name="time-spent-2">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-3" name="15"
+                                                    value="3" required=""><label for="time-spent-2-3" name="time-spent-2">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete ume da prepozna
+                                                kada osoba falšira ili
+                                                kada neki instrument
+                                                nije naštimovan.<label for="time-spent-3" class="mi-quiz__error-label">This
+                                                    field
+                                                    is required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-0" name="16"
+                                                    value="0" required=""><label for="time-spent-3-0" name="time-spent-3">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-1" name="16"
+                                                    value="1" required=""><label for="time-spent-3-1" name="time-spent-3">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-2" name="16"
+                                                    value="2" required=""><label for="time-spent-3-2" name="time-spent-3">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-3" name="16"
+                                                    value="3" required=""><label for="time-spent-3-3" name="time-spent-3">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete lako pamti
+                                                melodije i tekstove
+                                                pesama.<label for="time-spent-4" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-0" name="17"
+                                                    value="0" required=""><label for="time-spent-4-0" name="time-spent-4">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-1" name="17"
+                                                    value="1" required=""><label for="time-spent-4-1" name="time-spent-4">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-2" name="17"
+                                                    value="2" required=""><label for="time-spent-4-2" name="time-spent-4">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-3" name="17"
+                                                    value="3" required=""><label for="time-spent-4-3" name="time-spent-4">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Bodily-Kinesthetic">Moje
+                                                dete radije gleda
+                                                mjuzikle nego
+                                                predstave.<label for="time-spent-5" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-0" name="18"
+                                                    value="0" required=""><label for="time-spent-5-0" name="time-spent-5">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-1" name="18"
+                                                    value="1" required=""><label for="time-spent-5-1" name="time-spent-5">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-2" name="18"
+                                                    value="2" required=""><label for="time-spent-5-2" name="time-spent-5">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-3" name="18"
+                                                    value="3" required=""><label for="time-spent-5-3" name="time-spent-5">A
+                                                    lot</label></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <h3>Pager</h3>
+                        <section>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Ne slažem se <br> uopšte</th>
+                                            <th>Donekle <br> se slažem</th>
+                                            <th>Uglavnom <br>se slažem</th>
+                                            <th>U potpunosti <br> se slažem</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Linguistic">Jedan
+                                                od omiljenih predmeta
+                                                mog deteta je likovna
+                                                kultura<label for="time-spent-0" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-0" name="19"
+                                                    value="0" required=""><label for="time-spent-0-0" name="time-spent-0">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-1" name="19"
+                                                    value="1" required=""><label for="time-spent-0-1" name="time-spent-0">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-2" name="19"
+                                                    value="2" required=""><label for="time-spent-0-2" name="time-spent-0">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-3" name="19"
+                                                    value="3" required=""><label for="time-spent-0-3" name="time-spent-0">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Visual-Spatial">Moje
+                                                dete ima dobru
+                                                orijentaciju i voli da
+                                                čita
+                                                mape.<label for="time-spent-1" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-0" name="20"
+                                                    value="0" required=""><label for="time-spent-1-0" name="time-spent-1">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-1" name="20"
+                                                    value="1" required=""><label for="time-spent-1-1" name="time-spent-1">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-2" name="20"
+                                                    value="2" required=""><label for="time-spent-1-2" name="time-spent-1">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-3" name="20"
+                                                    value="3" required=""><label for="time-spent-1-3" name="time-spent-1">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Logical-Mathematical">Jedan
+                                                od hobija mog deteta su
+                                                slagalice i igračke za
+                                                građenje.<label for="time-spent-2" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-0" name="21"
+                                                    value="0" required=""><label for="time-spent-2-0" name="time-spent-2">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-1" name="21"
+                                                    value="1" required=""><label for="time-spent-2-1" name="time-spent-2">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-2" name="21"
+                                                    value="2" required=""><label for="time-spent-2-2" name="time-spent-2">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-3" name="21"
+                                                    value="3" required=""><label for="time-spent-2-3" name="time-spent-2">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moda
+                                                je nešto što do čega je
+                                                mom detetu stalo.<label for="time-spent-3" class="mi-quiz__error-label">This
+                                                    field
+                                                    is required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-0" name="22"
+                                                    value="0" required=""><label for="time-spent-3-0" name="time-spent-3">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-1" name="22"
+                                                    value="1" required=""><label for="time-spent-3-1" name="time-spent-3">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-2" name="22"
+                                                    value="2" required=""><label for="time-spent-3-2" name="time-spent-3">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-3" name="22"
+                                                    value="3" required=""><label for="time-spent-3-3" name="time-spent-3">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete voli da igra
+                                                video-igre.<label for="time-spent-4" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-0" name="23"
+                                                    value="0" required=""><label for="time-spent-4-0" name="time-spent-4">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-1" name="23"
+                                                    value="1" required=""><label for="time-spent-4-1" name="time-spent-4">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-2" name="23"
+                                                    value="2" required=""><label for="time-spent-4-2" name="time-spent-4">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-3" name="23"
+                                                    value="3" required=""><label for="time-spent-4-3" name="time-spent-4">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Bodily-Kinesthetic">Moje
+                                                dete lako pamti slike i
+                                                lica.<label for="time-spent-5" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-0" name="24"
+                                                    value="0" required=""><label for="time-spent-5-0" name="time-spent-5">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-1" name="24"
+                                                    value="1" required=""><label for="time-spent-5-1" name="time-spent-5">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-2" name="24"
+                                                    value="2" required=""><label for="time-spent-5-2" name="time-spent-5">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-3" name="24"
+                                                    value="3" required=""><label for="time-spent-5-3" name="time-spent-5">A
+                                                    lot</label></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <h3>Pager</h3>
+                        <section>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Ne slažem se <br> uopšte</th>
+                                            <th>Donekle <br> se slažem</th>
+                                            <th>Uglavnom <br>se slažem</th>
+                                            <th>U potpunosti <br> se slažem</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Linguistic">Vežbanje
+                                                je važan deo života mog
+                                                deteta.<label for="time-spent-0" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-0" name="25"
+                                                    value="0" required=""><label for="time-spent-0-0" name="time-spent-0">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-1" name="25"
+                                                    value="1" required=""><label for="time-spent-0-1" name="time-spent-0">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-2" name="25"
+                                                    value="2" required=""><label for="time-spent-0-2" name="time-spent-0">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-3" name="25"
+                                                    value="3" required=""><label for="time-spent-0-3" name="time-spent-0">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Visual-Spatial">Moje
+                                                dete voli da igra
+                                                fizičke igre.<label for="time-spent-1" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-0" name="26"
+                                                    value="0" required=""><label for="time-spent-1-0" name="time-spent-1">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-1" name="26"
+                                                    value="1" required=""><label for="time-spent-1-1" name="time-spent-1">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-2" name="26"
+                                                    value="2" required=""><label for="time-spent-1-2" name="time-spent-1">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-3" name="26"
+                                                    value="3" required=""><label for="time-spent-1-3" name="time-spent-1">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Logical-Mathematical">Moje
+                                                dete ima dobru
+                                                ravnotežu i
+                                                koordinaciju
+                                                pokreta.<label for="time-spent-2" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-0" name="27"
+                                                    value="0" required=""><label for="time-spent-2-0" name="time-spent-2">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-1" name="27"
+                                                    value="1" required=""><label for="time-spent-2-1" name="time-spent-2">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-2" name="27"
+                                                    value="2" required=""><label for="time-spent-2-2" name="time-spent-2">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-3" name="27"
+                                                    value="3" required=""><label for="time-spent-2-3" name="time-spent-2">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete privlače zanati i
+                                                rukotvorine.<label for="time-spent-3" class="mi-quiz__error-label">This
+                                                    field
+                                                    is required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-0" name="28"
+                                                    value="0" required=""><label for="time-spent-3-0" name="time-spent-3">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-1" name="28"
+                                                    value="1" required=""><label for="time-spent-3-1" name="time-spent-3">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-2" name="28"
+                                                    value="2" required=""><label for="time-spent-3-2" name="time-spent-3">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-3-3" name="28"
+                                                    value="3" required=""><label for="time-spent-3-3" name="time-spent-3">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete rado gleda
+                                                sportska takmičenja ili
+                                                plesače.<label for="time-spent-4" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-0" name="29"
+                                                    value="0" required=""><label for="time-spent-4-0" name="time-spent-4">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-1" name="29"
+                                                    value="1" required=""><label for="time-spent-4-1" name="time-spent-4">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-2" name="29"
+                                                    value="2" required=""><label for="time-spent-4-2" name="time-spent-4">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-4-3" name="29"
+                                                    value="3" required=""><label for="time-spent-4-3" name="time-spent-4">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Bodily-Kinesthetic">Moje
+                                                dete više voli da se
+                                                bavi sportom nego da
+                                                čita
+                                                ili uči.<label for="time-spent-5" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-0" name="30"
+                                                    value="0" required=""><label for="time-spent-5-0" name="time-spent-5">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-1" name="30"
+                                                    value="1" required=""><label for="time-spent-5-1" name="time-spent-5">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-2" name="30"
+                                                    value="2" required=""><label for="time-spent-5-2" name="time-spent-5">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-5-3" name="30"
+                                                    value="3" required=""><label for="time-spent-5-3" name="time-spent-5">A
+                                                    lot</label></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <h3>Pager</h3>
+                        <section>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Ne slažem se <br> uopšte</th>
+                                            <th>Donekle <br> se slažem</th>
+                                            <th>Uglavnom <br>se slažem</th>
+                                            <th>U potpunosti <br> se slažem</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Linguistic">Moje
+                                                dete ima veliku grupu
+                                                prijatelja i voljeno je
+                                                u
+                                                društvu.<label for="time-spent-0" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-0" name="31"
+                                                    value="0" required=""><label for="time-spent-0-0" name="time-spent-0">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-1" name="31"
+                                                    value="1" required=""><label for="time-spent-0-1" name="time-spent-0">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-2" name="31"
+                                                    value="2" required=""><label for="time-spent-0-2" name="time-spent-0">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-0-3" name="31"
+                                                    value="3" required=""><label for="time-spent-0-3" name="time-spent-0">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Visual-Spatial">Moje
+                                                dete ima prijatelje
+                                                koji mu se obraćaju
+                                                ukoliko
+                                                imaju neki problem.<label for="time-spent-1" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-0" name="32"
+                                                    value="0" required=""><label for="time-spent-1-0" name="time-spent-1">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-1" name="32"
+                                                    value="1" required=""><label for="time-spent-1-1" name="time-spent-1">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-2" name="32"
+                                                    value="2" required=""><label for="time-spent-1-2" name="time-spent-1">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-1-3" name="32"
+                                                    value="3" required=""><label for="time-spent-1-3" name="time-spent-1">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Logical-Mathematical">Moje
+                                                dete će radije biti u
+                                                društvu prijatelja nego
+                                                samo.<label for="time-spent-2" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-0" name="33"
+                                                    value="0" required=""><label for="time-spent-2-0" name="time-spent-2">Ne slažem se<br>uopšte</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-1" name="33"
+                                                    value="1" required=""><label for="time-spent-2-1" name="time-spent-2">Only
+                                                    a little</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-2" name="33"
+                                                    value="2" required=""><label for="time-spent-2-2" name="time-spent-2">A
+                                                    fair amount</label></td>
+                                            <td><input type="radio" class="calc required" id="time-spent-2-3" name="33"
+                                                    value="3" required=""><label for="time-spent-2-3" name="time-spent-2">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete najbolje
+                                                funkcioniše u grupi ili
+                                                timu.<label for="time-spent-3" class="mi-quiz__error-label">This
+                                                    field
+                                                    is required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-0" name="34"
+                                                    value="0" required=""><label for="time-spent-3-0" name="time-spent-3">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-1" name="34"
+                                                    value="1" required=""><label for="time-spent-3-1" name="time-spent-3">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-2" name="34"
+                                                    value="2" required=""><label for="time-spent-3-2" name="time-spent-3">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-3" name="34"
+                                                    value="3" required=""><label for="time-spent-3-3" name="time-spent-3">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Mom
+                                                detetu je stalo do
+                                                onoga što se dešava u
+                                                svetu.<label for="time-spent-4" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-0" name="35"
+                                                    value="0" required=""><label for="time-spent-4-0" name="time-spent-4">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-1" name="35"
+                                                    value="1" required=""><label for="time-spent-4-1" name="time-spent-4">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-2" name="35"
+                                                    value="2" required=""><label for="time-spent-4-2" name="time-spent-4">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-3" name="35"
+                                                    value="3" required=""><label for="time-spent-4-3" name="time-spent-4">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Bodily-Kinesthetic">Mom
+                                                detetu je zabavno da
+                                                upoznaje nove ljude.<label for="time-spent-5" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-0" name="36"
+                                                    value="0" required=""><label for="time-spent-5-0" name="time-spent-5">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-1" name="36"
+                                                    value="1" required=""><label for="time-spent-5-1" name="time-spent-5">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-2" name="36"
+                                                    value="2" required=""><label for="time-spent-5-2" name="time-spent-5">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-3" name="36"
+                                                    value="3" required=""><label for="time-spent-5-3" name="time-spent-5">A
+                                                    lot</label></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <h3>Pager</h3>
+                        <section>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Ne slažem se <br> uopšte</th>
+                                            <th>Donekle <br> se slažem</th>
+                                            <th>Uglavnom <br>se slažem</th>
+                                            <th>U potpunosti <br> se slažem</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Linguistic">Moje
+                                                dete više voli da radi
+                                                samo nego u grupi.<label for="time-spent-0" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-0" name="37"
+                                                    value="0" required=""><label for="time-spent-0-0" name="time-spent-0">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-1" name="37"
+                                                    value="1" required=""><label for="time-spent-0-1" name="time-spent-0">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-2" name="37"
+                                                    value="2" required=""><label for="time-spent-0-2" name="time-spent-0">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-3" name="37"
+                                                    value="3" required=""><label for="time-spent-0-3" name="time-spent-0">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Visual-Spatial">Moje
+                                                dete dobro formuliše i
+                                                analizira svoje
+                                                teorije.<label for="time-spent-1" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-0" name="38"
+                                                    value="0" required=""><label for="time-spent-1-0" name="time-spent-1">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-1" name="38"
+                                                    value="1" required=""><label for="time-spent-1-1" name="time-spent-1">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-2" name="38"
+                                                    value="2" required=""><label for="time-spent-1-2" name="time-spent-1">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-3" name="38"
+                                                    value="3" required=""><label for="time-spent-1-3" name="time-spent-1">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Logical-Mathematical">Moje
+                                                dete vodi svoj dnevnik.<label for="time-spent-2" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-0" name="39"
+                                                    value="0" required=""><label for="time-spent-2-0" name="time-spent-2">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-1" name="39"
+                                                    value="1" required=""><label for="time-spent-2-1" name="time-spent-2">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-2" name="39"
+                                                    value="2" required=""><label for="time-spent-2-2" name="time-spent-2">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-3" name="39"
+                                                    value="3" required=""><label for="time-spent-2-3" name="time-spent-2">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete provodi dosta
+                                                vremena samo, igrajući
+                                                video
+                                                igrice.<label for="time-spent-3" class="mi-quiz__error-label">This
+                                                    field
+                                                    is required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-0" name="40"
+                                                    value="0" required=""><label for="time-spent-3-0" name="time-spent-3">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-1" name="40"
+                                                    value="1" required=""><label for="time-spent-3-1" name="time-spent-3">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-2" name="40"
+                                                    value="2" required=""><label for="time-spent-3-2" name="time-spent-3">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-3" name="40"
+                                                    value="3" required=""><label for="time-spent-3-3" name="time-spent-3">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete imam snažna lična
+                                                i moralna uverenja.<label for="time-spent-4" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-0" name="41"
+                                                    value="0" required=""><label for="time-spent-4-0" name="time-spent-4">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-1" name="41"
+                                                    value="1" required=""><label for="time-spent-4-1" name="time-spent-4">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-2" name="41"
+                                                    value="2" required=""><label for="time-spent-4-2" name="time-spent-4">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-3" name="41"
+                                                    value="3" required=""><label for="time-spent-4-3" name="time-spent-4">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Bodily-Kinesthetic">Moje
+                                                dete je samostalno i
+                                                dobro se snalazi bez
+                                                uputstava.<label for="time-spent-5" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-0" name="42"
+                                                    value="0" required=""><label for="time-spent-5-0" name="time-spent-5">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-1" name="42"
+                                                    value="1" required=""><label for="time-spent-5-1" name="time-spent-5">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-2" name="42"
+                                                    value="2" required=""><label for="time-spent-5-2" name="time-spent-5">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-3" name="42"
+                                                    value="3" required=""><label for="time-spent-5-3" name="time-spent-5">A
+                                                    lot</label></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <h3>Pager</h3>
+                        <section>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Ne slažem se <br> uopšte</th>
+                                            <th>Donekle <br> se slažem</th>
+                                            <th>Uglavnom <br>se slažem</th>
+                                            <th>U potpunosti <br> se slažem</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Linguistic">Moje
+                                                dete voli da se igra sa
+                                                svojim kućnim
+                                                ljubimcima ili bi
+                                                volelo da ima kućne
+                                                ljubimce
+                                                sa kojima bi moglo da
+                                                se
+                                                igra.<label for="time-spent-0" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-0" name="43"
+                                                    value="0" required=""><label for="time-spent-0-0" name="time-spent-0">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-1" name="43"
+                                                    value="1" required=""><label for="time-spent-0-1" name="time-spent-0">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-2" name="43"
+                                                    value="2" required=""><label for="time-spent-0-2" name="time-spent-0">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-0-3" name="43"
+                                                    value="3" required=""><label for="time-spent-0-3" name="time-spent-0">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Visual-Spatial">Moje
+                                                dete voli da provodi
+                                                dosta vremena u
+                                                prirodi.<label for="time-spent-1" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-0" name="44"
+                                                    value="0" required=""><label for="time-spent-1-0" name="time-spent-1">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-1" name="44"
+                                                    value="1" required=""><label for="time-spent-1-1" name="time-spent-1">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-2" name="44"
+                                                    value="2" required=""><label for="time-spent-1-2" name="time-spent-1">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-1-3" name="44"
+                                                    value="3" required=""><label for="time-spent-1-3" name="time-spent-1">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Logical-Mathematical">Kad
+                                                poraste, mislim da bi
+                                                moje dete volelo da
+                                                radi
+                                                u nekoj oblasti koja
+                                                ima veze sa prirodom
+                                                ili
+                                                životinjama.<label for="time-spent-2" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-0" name="45"
+                                                    value="0" required=""><label for="time-spent-2-0" name="time-spent-2">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-1" name="45"
+                                                    value="1" required=""><label for="time-spent-2-1" name="time-spent-2">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-2" name="45"
+                                                    value="2" required=""><label for="time-spent-2-2" name="time-spent-2">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-2-3" name="45"
+                                                    value="3" required=""><label for="time-spent-2-3" name="time-spent-2">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete vodi računa o
+                                                životnoj sredini (ne
+                                                baca
+                                                smeće po ulici,
+                                                učestvuje u
+                                                volonterskim
+                                                akcijama)<label for="time-spent-3" class="mi-quiz__error-label">This
+                                                    field
+                                                    is required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-0" name="46"
+                                                    value="0" required=""><label for="time-spent-3-0" name="time-spent-3">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-1" name="46"
+                                                    value="1" required=""><label for="time-spent-3-1" name="time-spent-3">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-2" name="46"
+                                                    value="2" required=""><label for="time-spent-3-2" name="time-spent-3">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-3-3" name="46"
+                                                    value="3" required=""><label for="time-spent-3-3" name="time-spent-3">A
+                                                    lot</label></td>
+
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Intrapersonal">Moje
+                                                dete uživa u
+                                                baštovanstvu (gajenju
+                                                cveća, voća
+                                                i povrća)<label for="time-spent-4" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-0" name="47"
+                                                    value="0" required=""><label for="time-spent-4-0" name="time-spent-4">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-1" name="47"
+                                                    value="1" required=""><label for="time-spent-4-1" name="time-spent-4">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-2" name="47"
+                                                    value="2" required=""><label for="time-spent-4-2" name="time-spent-4">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-4-3" name="47"
+                                                    value="3" required=""><label for="time-spent-4-3" name="time-spent-4">A
+                                                    lot</label></td>
+                                        </tr>
+                                        <tr class="mi-quiz__question-container">
+                                            <td class="mi-quiz__question" data-question-cats="Bodily-Kinesthetic">Moje
+                                                dete rado posećuje
+                                                zoološke vrtove,
+                                                akvarijume
+                                                i rezervate sa
+                                                životinjama kad god ima
+                                                vremena.<label for="time-spent-5" class="mi-quiz__error-label">This
+                                                    field is
+                                                    required.</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-0" name="48"
+                                                    value="0" required=""><label for="time-spent-5-0" name="time-spent-5">Ne slažem se<br>uopšte</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-1" name="48"
+                                                    value="1" required=""><label for="time-spent-5-1" name="time-spent-5">Only
+                                                    a little</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-2" name="48"
+                                                    value="2" required=""><label for="time-spent-5-2" name="time-spent-5">A
+                                                    fair amount</label></td>
+                                            <td><input class="calc required" type="radio" id="time-spent-5-3" name="48"
+                                                    value="3" required=""><label for="time-spent-5-3" name="time-spent-5">A
+                                                    lot</label></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </section>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="jquery.steps.min.js"></script>
+    <script>
+        $("#example-basic").steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            autoFocus: true,
+            enableAllSteps: true,
+        });
+    </script>
+    <script>
+        function calcscore() {
+            var score = 0;
+            $(".calc:checked").each(function () {
+                score += parseInt($(this).val(), 10);
+            });
+            $("input[name=sum]").val(score)
+        }
+        $().ready(function () {
+            $(".calc").change(function () {
+                calcscore()
+            });
+        });
+    </script>
+    <script>
+        $(":radio").on("change", function () {
+            var total = 0;
+            $(":radio:checked").each(function () {
+                total += Number(this.value);
+            });
+
+            $("#total").text(total);
+            if (total <= 18) {
+                $(".wizard>.actions a").css('pointer-events', 'auto');
+            }
+        });
+    </script>
+
+    <script>
+        /*
+     $('a[href="next"]').click(function () {
+                if ($('input[name=1]:checked').length <= 0) {
+                        $("div"]").css('outline', '1px solid red');
+                }
+                else {
+                        $("#bordergen").css('outline', '1px solid #ccc');
+                }
+        });
+    </script>
+    <script>
+        /*
+        var form = $("#example-advanced-form").show();
+
+        form.steps({
+                headerTag: "h3",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                onStepChanging: function (event, currentIndex, newIndex) {
+                        // Allways allow previous action even if the current form is not valid!
+                        if (currentIndex > newIndex) {
+                                return true;
+                        }
+                        // Forbid next action on "Warning" step if the user is to young
+                        if (newIndex === 3 && Number($("#age-2").val()) < 18) {
+                                return false;
+                        }
+                        // Needed in some cases if the user went back (clean up)
+                        if (currentIndex < newIndex) {
+                                // To remove error styles
+                                form.find(".body:eq(" + newIndex + ") label.error").remove();
+                                form.find(".body:eq(" + newIndex + ") .error").removeClass("error");
+                        }
+                        form.validate().settings.ignore = ":disabled,:hidden";
+                        return form.valid();
+
+                         $('#submit').click(function () {
+                                if (!$("input[name='confirm']:checked").val()) {
+                                        alert('Nothing is checked!');
+                                        return false;
+                                }
+                                else {
+                                        alert('hurree! its checked');
+                                }
+                        })
+
+                        if (element.is(":radio")) {
+                                error.appendTo(element.parents('.container'));
+                        }
+                        else { // This is the default behavior
+                                error.insertAfter(element);
+                        }
+                }
+                },
+                onStepChanged: function (event, currentIndex, priorIndex) {
+                        // Used to skip the "Warning" step if the user is old enough.
+                        if (currentIndex === 2 && Number($("#age-2").val()) >= 18) {
+                                form.steps("next");
+                        }
+                        // Used to skip the "Warning" step if the user is old enough and wants to the previous step.
+                        if (currentIndex === 2 && priorIndex === 3) {
+                                form.steps("previous");
+                        }
+                },
+                onFinishing: function (event, currentIndex) {
+                        form.validate().settings.ignore = ":disabled";
+                        return form.valid();
+                },
+                onFinished: function (event, currentIndex) {
+                        alert("Submitted!");
+                }
+        }).validate({
+                errorPlacement: function errorPlacement(error, element) { element.before(error); },
+                rules: {
+                        confirm: {
+                                equalTo: "#password-2"
+                        }
+                }
+        });*/
+    </script>
+</body>
+
+</html>
