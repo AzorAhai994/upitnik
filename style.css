@@ -2,6 +2,7 @@ body {
   background-image: url("bg-img.jpg");
   background-size: cover;
   height: 100vh;
+  font-family: "Rubik", sans-serif !important;
 }
 
 .col--con {
@@ -43,7 +44,6 @@ body {
 }
 
 .mi-quiz__question-container input + label {
-  font-family: Gotham SSm A, Gotham SSm B, Arial, Verdana, sans-serif;
   font-weight: 400;
   font-style: normal;
   display: inline-block;
@@ -63,7 +63,6 @@ body {
 }
 
 .mi-quiz__question-container .mi-quiz__question {
-  font-family: Gotham SSm A, Gotham SSm B, Arial, Verdana, sans-serif;
   font-weight: 700;
   font-style: normal;
   text-align: left;
@@ -71,7 +70,6 @@ body {
 
 @media screen and (min-width: 769px) {
   .mi-quiz__question-container .mi-quiz__question {
-    font-family: Gotham SSm A, Gotham SSm B, Arial, Verdana, sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: left;
@@ -103,7 +101,7 @@ body {
 .wizard > .actions a,
 .wizard > .actions a:hover,
 .wizard > .actions a:active {
-  background: #2184be;
+  background: #349e37;
   color: #fff;
   display: block;
   padding: 0.5em 1em;
@@ -112,6 +110,9 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   pointer-events: none;
+  width: 119px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .wizard > .actions .disabled a,
@@ -161,7 +162,7 @@ body {
 
 th {
   /* text-align: center; */
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .wizard > .content {
@@ -236,8 +237,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
   line-height: 1.5em;
   font-size: 6em;
 }
@@ -300,7 +299,6 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 label {
@@ -467,6 +465,14 @@ label {
   color: #666;
   cursor: pointer;
 }
+.wizard > .content > .body input {
+  display: inline-block;
+}
+
+th {
+  text-align: center;
+  font-weight: normal;
+}
 
 @media screen and (max-width: 769px) {
   body {
@@ -485,6 +491,11 @@ label {
     top: -13px;
     left: 25px;
   }
+
+  .wizard > .content > .body input {
+    display: block;
+  }
+
   .mi-quiz__question-container td {
     font-size: 16px;
   }
@@ -640,7 +651,7 @@ form .question label {
   padding: 10px 15px;
   display: block;
   position: absolute;
-  margin-top: -45px;
+  margin-top: -32px;
   z-index: 2;
   pointer-events: none;
 }
