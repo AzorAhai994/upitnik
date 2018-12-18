@@ -569,6 +569,9 @@ th {
   .col-lg-12 {
     padding-right: 0;
   }
+  .wizard > .content {
+    min-height: 46em;
+  }
   .row {
     margin-left: 0;
   }
