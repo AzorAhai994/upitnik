@@ -501,6 +501,7 @@ label {
   .container {
     padding-right: 0px;
     padding-left: 0px;
+    min-width: 100vw;
   }
 
   .col-lg-12 {
@@ -535,5 +536,29 @@ label {
   }
   .visible {
     opacity: 100 !important;
+  }
+
+  tr > td:nth-child(n + 2) {
+    height: 36px;
+  }
+  tr {
+    margin-bottom: 40px;
+    display: block;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  .container {
+    max-width: 897px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .col-lg-12 {
+    padding-right: 0;
+  }
+  .row {
+    margin-left: 0;
   }
 }
