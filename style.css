@@ -640,7 +640,7 @@ form .question label {
   padding: 10px 15px;
   display: block;
   position: absolute;
-  margin-top: -32px;
+  margin-top: -45px;
   z-index: 2;
   pointer-events: none;
 }
