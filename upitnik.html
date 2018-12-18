@@ -992,8 +992,21 @@
                                 </table>
                             </div>
 
-                        </section>
+                        </section><h3>pager</h3>
+<section>
+        <form>
 
+                <div class="question">
+                        <input type="text" required="">
+                        <label>Ime</label>
+                </div>
+
+                <div class="question">
+                        <input type="text" required="">
+                        <label>Email Address</label>
+                </div>
+        </form>
+</section>
                     </div>
                 </form>
             </div>
@@ -1014,6 +1027,15 @@
             transitionEffect: "slideLeft",
             autoFocus: true,
             enableAllSteps: true,
+
+       onStepChanged: function (event, currentIndex, newIndex) {
+
+                    if (currentIndex == 8) {
+
+                             $('ul[role="menu"]').addClass("visible");
+                    }
+
+            },
         });
     </script>
     <script>
