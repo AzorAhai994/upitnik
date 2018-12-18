@@ -516,7 +516,7 @@ label {
     margin: 0;
   }
   .mi-quiz__question-container td {
-    padding: 4px 17px;
+    padding: 0 17px;
   }
 
   .wizard > .actions > ul {
