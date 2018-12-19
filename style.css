@@ -569,6 +569,9 @@ th {
   form.exit .question label {
     margin-top: -33px;
   }
+  form.exit {
+    min-width: 306px;
+  }
 }
 @media screen and (max-width: 991px) and (min-width: 769px) {
   .container {
@@ -603,11 +606,11 @@ form .question input[type="text"] {
   transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
 }
 
-form {
+form.exit {
   position: relative;
   display: inline-block;
   max-width: 700px;
-  min-width: 306px;
+
   box-sizing: border-box;
   padding: 30px 25px;
   background-color: white;
@@ -711,6 +714,10 @@ form .question input[type="text"]:valid ~ label {
   -ms-transform: translate(5px, -35px) scale(0.6);
   -webkit-transform: translate(5px, -35px) scale(0.6);
   transform: translate(5px, -35px) scale(0.6);
+}
+
+form.exit {
+  min-width: 442px;
 }
 
 @media screen and (max-height: 700px) and (min-height: 631px) and (orientation: landscape) {
