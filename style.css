@@ -12,8 +12,9 @@ body {
 .landing input {
   width: 30px;
 }
-.landing .godine p {
+.landing ul p {
   font-size: 1.2em;
+  margin-top: 1em;
 }
 
 .col--con {
