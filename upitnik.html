@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
         <link rel="shortcut icon" type="image/x-icon" href="http://www.savremena-gimnazija.edu.rs/wp-content/uploads/2015/11/favicon-16×16-br.-2.png">
+        <meta name="theme-color" content="#db5945">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&amp;subset=latin,latin-ext"
         rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&amp;subset=latin-ext" rel="stylesheet">
@@ -1033,10 +1034,15 @@
             enableAllSteps: true,
 
        onStepChanged: function (event, currentIndex, newIndex) {
+               if (currentIndex == 1) {
 
+                       $('ul[role="menu"]').addClass("visible");
+                       $('meta[name=author]').attr('content', '#f7b716');
+               }
                     if (currentIndex == 8) {
 
                              $('ul[role="menu"]').addClass("visible");
+                             $('meta[name=author]').attr('content', '#00bcd4');
                     }
 
             },
