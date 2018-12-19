@@ -694,9 +694,6 @@ form .question input[type="text"]:valid ~ label {
   form.exit {
     min-width: 300px !important;
   }
-  section#example-basic-p-0 {
-    border-top: none;
-  }
 }
 @media screen and (max-width: 991px) and (min-width: 769px) {
   .container {
