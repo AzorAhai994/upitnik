@@ -712,3 +712,9 @@ form .question input[type="text"]:valid ~ label {
   -webkit-transform: translate(5px, -35px) scale(0.6);
   transform: translate(5px, -35px) scale(0.6);
 }
+
+@media screen and (max-height: 700px) and (min-height: 500px) {
+  .container {
+    transform: scale(0.88);
+  }
+}
