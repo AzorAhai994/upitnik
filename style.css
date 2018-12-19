@@ -716,6 +716,5 @@ form .question input[type="text"]:valid ~ label {
 @media screen and (max-height: 700px) and (min-height: 631px) and (orientation: landscape) {
   .container {
     height: auto !important;
-    /* transform: scale(0.88);*/
   }
 }
