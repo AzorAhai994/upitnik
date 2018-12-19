@@ -8,6 +8,12 @@ body {
 .landing .col-lg-12 {
   width: auto !important;
 }
+
+.landing input {
+  width: 30px;
+  border: none;
+}
+
 .col--con {
   background: rgba(255, 255, 255, 0.89);
   border-radius: 8px;
@@ -19,6 +25,18 @@ body {
 }
 .text span {
   font-weight: bold;
+}
+.landing h1 {
+  text-transform: uppercase;
+  color: #349e37;
+  font-size: 3rem;
+}
+.landing h3 {
+  color: #375ca4;
+}
+.landing h1,
+.landing h3 {
+  line-height: 1;
 }
 .row {
   width: 100%;
@@ -173,7 +191,7 @@ th {
 }
 
 .wizard > .content {
-  background: #fffffff2;
+  background: rgba(255, 255, 255, 0.949);
   display: block;
   margin: 0.5em;
   min-height: 40em;
