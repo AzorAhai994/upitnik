@@ -15,8 +15,9 @@ body {
 }
 
 .col--con {
-  background: rgba(255, 255, 255, 0.89);
+  background: url(pattern.jpg);
   border-radius: 8px;
+  background-size: 56%;
   padding: 0 3em;
 }
 .text {
@@ -34,9 +35,32 @@ body {
 .landing h3 {
   color: #375ca4;
 }
+.landing h4 {
+  color: #f7b716;
+  font-size: 1.2em;
+}
 .landing h1,
 .landing h3 {
   line-height: 1;
+}
+.godine {
+  float: right;
+}
+.btn-outline-primary {
+  color: #de1d1f;
+  background-color: transparent;
+  background-image: none;
+  border-color: #de1d1f;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #de1d1f;
+  border-color: #de1d1f;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+  background-color: #de1d1f;
+  border-color: #de1d1f;
 }
 .row {
   width: 100%;
@@ -630,6 +654,16 @@ form .question input[type="text"]:valid ~ label {
   }
   br {
     display: none;
+  }
+  .landing .row {
+    width: auto;
+  }
+  .landing .col-sm-6 {
+    padding: 0;
+  }
+  .godine {
+    text-align: center !important;
+    float: none !important;
   }
   .wizard > .content > .body label {
     /* display: inline-block; */
