@@ -1,24 +1,29 @@
 body {
   background-image: url("bg-img.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   font-family: "Rubik", sans-serif !important;
 }
 
 .col--con {
-  background: rgba(255, 255, 255, 0.6196078431372549);
+  background: rgba(255, 255, 255, 0.89);
   border-radius: 8px;
   padding: 0 3em;
 }
 .text {
   font-size: 17px;
+  text-align: left;
+}
+.text span {
+  font-weight: bold;
 }
 .row {
   width: 100%;
 }
 .mb-3,
 .my-3 {
-  margin-bottom: 6rem !important;
+  margin-bottom: 2rem !important;
 }
 .mi-quiz__question-container {
   text-align: center;
@@ -238,7 +243,7 @@ h4,
 h5,
 h6 {
   line-height: 1.5em;
-  font-size: 6em;
+  font-size: 2em;
 }
 
 html {
