@@ -473,126 +473,6 @@ th {
   text-align: center;
   font-weight: normal;
 }
-
-@media screen and (max-width: 769px) {
-  body {
-    background: #fff;
-  }
-  thead {
-    display: none;
-  }
-  br {
-    display: none;
-  }
-  .wizard > .content > .body label {
-    /* display: inline-block; */
-    margin-bottom: 0.5em;
-    position: relative;
-    top: -13px;
-    left: 25px;
-  }
-
-  .calc.required {
-    top: 10px !important;
-    margin-right: 7px;
-  }
-
-  .wizard > .content > .body input {
-    display: block;
-  }
-
-  .mi-quiz__question-container td {
-    font-size: 16px;
-  }
-
-  .mi-quiz__question-container td {
-    border: none;
-  }
-  .mi-quiz__question-container {
-    border: none;
-  }
-  * {
-    overflow: visible !important;
-  }
-  .container {
-    padding-right: 0px;
-    padding-left: 0px;
-    min-width: 100vw;
-  }
-
-  .col-lg-12 {
-    /* position: relative; */
-    /* width: 100%; */
-    min-height: 1px;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .row {
-    width: 100vw;
-    margin: 0;
-  }
-  .mi-quiz__question-container td {
-    padding: 0 17px;
-  }
-
-  .wizard > .actions > ul {
-    position: fixed;
-    bottom: 7px;
-    right: -3px;
-    top: auto;
-  }
-
-  .wizard > .content {
-    margin: 0;
-  }
-  ul[role="menu"] {
-    display: none;
-    opacity: 0;
-  }
-  .visible {
-    opacity: 100 !important;
-    display: inline-block;
-  }
-
-  tr > td:nth-child(n + 2) {
-    height: 36px;
-  }
-  tr {
-    margin-bottom: 40px;
-    display: block;
-  }
-  tr::after {
-    content: "";
-    display: block;
-    height: 10px;
-  }
-  form.exit .question label {
-    margin-top: -33px;
-  }
-  form.exit {
-    min-width: 306px;
-  }
-}
-@media screen and (max-width: 991px) and (min-width: 769px) {
-  .container {
-    max-width: 897px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .wizard > .content {
-    min-height: 47em;
-  }
-  .col-lg-12 {
-    padding-right: 0;
-  }
-
-  .row {
-    margin-left: 0;
-  }
-}
 .form-group > .form-group > label {
   position: contents;
 }
@@ -610,7 +490,7 @@ form.exit {
   position: relative;
   display: inline-block;
   max-width: 700px;
-
+  min-width: 442px;
   box-sizing: border-box;
   padding: 30px 25px;
   background-color: white;
@@ -716,8 +596,124 @@ form .question input[type="text"]:valid ~ label {
   transform: translate(5px, -35px) scale(0.6);
 }
 
-form.exit {
-  min-width: 442px;
+@media screen and (max-width: 769px) {
+  body {
+    background: #fff;
+  }
+  thead {
+    display: none;
+  }
+  br {
+    display: none;
+  }
+  .wizard > .content > .body label {
+    /* display: inline-block; */
+    margin-bottom: 0.5em;
+    position: relative;
+    top: -13px;
+    left: 25px;
+  }
+
+  .calc.required {
+    top: 10px !important;
+    margin-right: 7px;
+  }
+
+  .wizard > .content > .body input {
+    display: block;
+  }
+
+  .mi-quiz__question-container td {
+    font-size: 16px;
+  }
+
+  .mi-quiz__question-container td {
+    border: none;
+  }
+  .mi-quiz__question-container {
+    border: none;
+  }
+  * {
+    overflow: visible !important;
+  }
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    min-width: 100vw;
+  }
+
+  .col-lg-12 {
+    /* position: relative; */
+    /* width: 100%; */
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .row {
+    width: 100vw;
+    margin: 0;
+  }
+  .mi-quiz__question-container td {
+    padding: 0 17px;
+  }
+
+  .wizard > .actions > ul {
+    position: fixed;
+    bottom: 7px;
+    right: -3px;
+    top: auto;
+  }
+
+  .wizard > .content {
+    margin: 0;
+  }
+  ul[role="menu"] {
+    display: none;
+    opacity: 0;
+  }
+  .visible {
+    opacity: 100 !important;
+    display: inline-block;
+  }
+
+  tr > td:nth-child(n + 2) {
+    height: 36px;
+  }
+  tr {
+    margin-bottom: 40px;
+    display: block;
+  }
+  tr::after {
+    content: "";
+    display: block;
+    height: 10px;
+  }
+  form.exit .question label {
+    margin-top: -33px;
+  }
+  form.exit {
+    min-width: 300px !important;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  .container {
+    max-width: 897px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .wizard > .content {
+    min-height: 47em;
+  }
+  .col-lg-12 {
+    padding-right: 0;
+  }
+
+  .row {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-height: 700px) and (min-height: 631px) and (orientation: landscape) {
