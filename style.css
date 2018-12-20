@@ -16,7 +16,9 @@ body {
   font-size: 1.2em;
   margin-top: 1em;
 }
-
+.pagination {
+  margin-top: 1em;
+}
 .col--con {
   background: url(pattern.jpg);
   border-radius: 8px;
