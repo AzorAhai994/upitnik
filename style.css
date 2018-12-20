@@ -658,6 +658,76 @@ form .question input[type="text"]:valid ~ label {
   -webkit-transform: translate(5px, -35px) scale(0.6);
   transform: translate(5px, -35px) scale(0.6);
 }
+/*STEPS PROGRES*/
+
+.multi-steps > li.is-active:before,
+.multi-steps > li.is-active ~ li:before {
+  content: counter(stepNum);
+  font-family: inherit;
+  font-weight: 700;
+}
+.multi-steps > li.is-active:after,
+.multi-steps > li.is-active ~ li:after {
+  background-color: #ededed;
+}
+
+.multi-steps {
+  display: table;
+  table-layout: fixed;
+  width: 91%;
+}
+.multi-steps > li {
+  counter-increment: stepNum;
+  text-align: center;
+  display: table-cell;
+  position: relative;
+  color: #349e37;
+}
+.multi-steps > li:before {
+  content: "\f00c";
+  content: "\2713;";
+  content: "\10003";
+  content: "\10004";
+  content: "\2713";
+  display: block;
+  margin: 0 auto 4px;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 23px;
+  text-align: center;
+  font-weight: bold;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #349e37;
+  border-radius: 50%;
+}
+.multi-steps > li:after {
+  content: "";
+  height: 2px;
+  width: 94%;
+  background-color: #4eaa50;
+  position: absolute;
+  top: 11px;
+  left: 50%;
+  z-index: -1;
+}
+.multi-steps > li:last-child:after {
+  display: none;
+}
+.multi-steps > li.is-active:before {
+  background-color: #fff;
+  border-color: #76bd78;
+}
+.multi-steps > li.is-active ~ li {
+  color: #808080;
+}
+.multi-steps > li.is-active ~ li:before {
+  background-color: #ededed;
+  border-color: #ededed;
+}
+
+/*END OF PAGINATION*/
 
 @media screen and (max-width: 769px) {
   body {
@@ -699,7 +769,9 @@ form .question input[type="text"]:valid ~ label {
     top: 10px !important;
     margin-right: 7px;
   }
-
+  .multi-steps {
+    width: 80%;
+  }
   .wizard > .content > .body input {
     display: block;
   }
@@ -802,73 +874,4 @@ form .question input[type="text"]:valid ~ label {
   .container {
     height: auto !important;
   }
-}
-
-/*STEPS PROGRES*/
-
-.multi-steps > li.is-active:before,
-.multi-steps > li.is-active ~ li:before {
-  content: counter(stepNum);
-  font-family: inherit;
-  font-weight: 700;
-}
-.multi-steps > li.is-active:after,
-.multi-steps > li.is-active ~ li:after {
-  background-color: #ededed;
-}
-
-.multi-steps {
-  display: table;
-  table-layout: fixed;
-  width: 91%;
-}
-.multi-steps > li {
-  counter-increment: stepNum;
-  text-align: center;
-  display: table-cell;
-  position: relative;
-  color: #349e37;
-}
-.multi-steps > li:before {
-  content: "\f00c";
-  content: "\2713;";
-  content: "\10003";
-  content: "\10004";
-  content: "\2713";
-  display: block;
-  margin: 0 auto 4px;
-  background-color: #fff;
-  width: 25px;
-  height: 25px;
-  line-height: 23px;
-  text-align: center;
-  font-weight: bold;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #349e37;
-  border-radius: 50%;
-}
-.multi-steps > li:after {
-  content: "";
-  height: 2px;
-  width: 94%;
-  background-color: #4eaa50;
-  position: absolute;
-  top: 11px;
-  left: 50%;
-  z-index: -1;
-}
-.multi-steps > li:last-child:after {
-  display: none;
-}
-.multi-steps > li.is-active:before {
-  background-color: #fff;
-  border-color: #76bd78;
-}
-.multi-steps > li.is-active ~ li {
-  color: #808080;
-}
-.multi-steps > li.is-active ~ li:before {
-  background-color: #ededed;
-  border-color: #ededed;
 }
