@@ -744,6 +744,7 @@ form .question input[type="text"]:valid ~ label {
   .visible {
     opacity: 100 !important;
     display: inline-block;
+    position: relative;
   }
 
   tr > td:nth-child(n + 2) {
