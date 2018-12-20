@@ -658,6 +658,10 @@ form .question input[type="text"]:valid ~ label {
   br {
     display: none;
   }
+  .landing h1 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
   .landing .row {
     width: auto;
   }
