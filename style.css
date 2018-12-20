@@ -2,7 +2,7 @@ body {
   background-image: url("bg-img.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  /* height: 100vh; */
   font-family: "Rubik", sans-serif !important;
 }
 .landing .col-lg-12 {
@@ -380,7 +380,7 @@ table {
 ul,
 ol {
   padding: 0;
-  margin: 0 0 10px 25px;
+  /* margin: 0 0 10px 25px; */
 }
 
 h1,
@@ -820,7 +820,7 @@ form .question input[type="text"]:valid ~ label {
 .multi-steps {
   display: table;
   table-layout: fixed;
-  width: 85%;
+  width: 91%;
 }
 .multi-steps > li {
   counter-increment: stepNum;

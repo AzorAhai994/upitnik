@@ -18,8 +18,9 @@
 </head>
 
 <body>
-        <div class="container pagination mt-3 d-flex align-items-center">
+        <div class="container pagination mt-3 d-flex">
                 <br /><br />
+                <div class="col-lg-12">
                 <ul class="list-unstyled multi-steps">
                         <li class="1 is-active"></li>
                         <li class="2"></li>
@@ -31,7 +32,7 @@
                         <li class="8"></li>
                         <li class="9"></li>
 
-                </ul>
+                </ul></div>
 
         </div>
     <div class="main-content container h-100 align-items-center d-flex">
@@ -1091,7 +1092,7 @@
                     }
                if (currentIndex == 8) {
 
-
+                       $('li[class="9"]').addClass('is-active').siblings().removeClass('is-active');
                       $('ul[role="menu"]').css("opacity", "100");
                       $('a[href="#previous"]').css({"opacity": "0", "pointer-events": "none"});
                        $('meta[name=theme-color]').attr('content', '#ff4a56');
