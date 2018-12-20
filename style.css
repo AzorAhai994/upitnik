@@ -52,6 +52,12 @@ body {
 .godine {
   float: right;
 }
+.howard {
+  font-family: "Pacifico", cursive !important;
+  font-size: 1.3em;
+  text-align: right;
+  margin-bottom: 1.5em;
+}
 .btn-outline-primary {
   color: #de1d1f;
   background-color: transparent;
@@ -557,7 +563,7 @@ form.exit {
   min-width: 442px;
   box-sizing: border-box;
   padding: 30px 25px;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 40px;
   margin: 40px 0;
   left: 50%;
@@ -602,8 +608,12 @@ form .question {
 .exit .row {
   width: auto;
 }
+.exit p {
+  margin-bottom: 4rem;
+}
 form .question:first-of-type {
   padding-top: 0;
+  margin-bottom: 2em;
 }
 form .question:last-of-type {
   padding-bottom: 0;
@@ -632,7 +642,7 @@ form .question input[type="text"] {
   display: block;
   box-sizing: border-box;
   padding: 10px 15px;
-  border-radius: 60px;
+  border-radius: 7px;
   /* color: #84030b; */
   font-weight: 100;
   letter-spacing: 0.01em;
@@ -641,12 +651,12 @@ form .question input[type="text"] {
 }
 form .question input[type="text"]:focus {
   outline: none;
-  background: rgba(3, 169, 244, 0.59);
+  background: rgba(226, 226, 226, 0.41);
   color: #191919;
   /* margin-top: 30px; */
 }
 form .question input[type="text"]:valid {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 form .question input[type="text"]:focus ~ label {
   -moz-transform: translate(0, -35px);
@@ -662,7 +672,9 @@ form .question input[type="text"]:valid ~ label {
   -webkit-transform: translate(5px, -35px) scale(0.6);
   transform: translate(5px, -35px) scale(0.6);
 }
-
+.exit label span {
+  color: red;
+}
 /*STEPS PROGRES*/
 
 .multi-steps > li.is-active:before,
@@ -779,6 +791,7 @@ form .question input[type="text"]:valid ~ label {
   }
   .wizard > .content > .body input {
     display: block;
+    margin-top: 15px;
   }
 
   .mi-quiz__question-container td {
@@ -852,6 +865,10 @@ form .question input[type="text"]:valid ~ label {
   }
   form.exit {
     min-width: 300px !important;
+  }
+  form .question:first-of-type {
+    padding-top: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 991px) and (min-width: 769px) {
