@@ -186,6 +186,17 @@ body {
   margin: 0 0.5em;
 }
 
+.actions a[href="#finish"] {
+  width: 166px;
+}
+.actions a[href="#finish"]:hover {
+  width: 166px;
+}
+.disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .wizard > .actions {
   position: relative;
   display: block;

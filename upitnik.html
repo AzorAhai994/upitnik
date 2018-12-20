@@ -20,10 +20,10 @@
 <body>
     <div class="container h-100 align-items-center d-flex">
         <div class="row rounded" >
-            <div class="col-lg-12"><!--
+            <div class="col-lg-12"><!-- PRIKAZ ZBIRA VREDNOSTI SELEKTOVANIH OPCIJA
                 Total Score:
                 <input type="text" name="sum" />
-                <p>Total: £ <span id="total">0</span></p>
+                <p>Total:  <span id="total">0</span></p>
                 <form id="example-advanced-form" action="#">-->
                     <div id="example-basic">
                         <h3>Keyboard</h3>
@@ -1000,7 +1000,8 @@
                         </section><h3>pager</h3>
 <section>
         <form class="exit">
-                <p>lorem ispsum</p>
+                <p>Da Vam pošaljemo rezultate testa i saznate koja vrsta inteligencije je najdominantnija kod Vašeg deteta, unesite ime
+                i ime i kliknite na dugme "Rezultati testa".</p>
                 <div class="question">
                         <input type="text" required="">
                         <label>Ime</label>
@@ -1071,8 +1072,9 @@
                     }
                if (currentIndex == 8) {
 
-                       $('ul[role="menu"]').addClass("visible");
+
                       $('ul[role="menu"]').css("opacity", "100");
+                      $('a[href="#previous"]').css({"opacity": "0", "pointer-events": "none"});
                        $('meta[name=theme-color]').attr('content', '#ff4a56');
                }
             },
