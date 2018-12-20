@@ -652,6 +652,10 @@ form .question input[type="text"]:valid ~ label {
   body {
     background: #fff;
   }
+  .landing body {
+    background-image: url("bg-img.jpg");
+    background-size: 100%;
+  }
   thead {
     display: none;
   }
