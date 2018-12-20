@@ -18,8 +18,27 @@
 </head>
 
 <body>
-    <div class="container h-100 align-items-center d-flex">
+        <div class="container pagination mt-3 d-flex align-items-center">
+                <br /><br />
+                <ul class="list-unstyled multi-steps">
+                        <li class="1 is-active"></li>
+                        <li class="2"></li>
+                        <li class="3"></li>
+                        <li class="4"></li>
+                        <li class="5"></li>
+                        <li class="6"></li>
+                        <li class="7"></li>
+                        <li class="8"></li>
+                        <li class="9"></li>
+
+                </ul>
+
+        </div>
+    <div class="main-content container h-100 align-items-center d-flex">
+
+
         <div class="row rounded" >
+
             <div class="col-lg-12"><!-- PRIKAZ ZBIRA VREDNOSTI SELEKTOVANIH OPCIJA
                 Total Score:
                 <input type="text" name="sum" />
@@ -1037,37 +1056,37 @@
        onStepChanged: function (event, currentIndex, newIndex) {
                if (currentIndex == 0) {
 
-
+                        $('li[class="1"]').addClass('is-active').siblings().removeClass('is-active');
                        $('meta[name=theme-color]').attr('content', '#f7b716');
                } if (currentIndex == 1) {
 
-
+                       $('li[class="2"]').addClass('is-active').siblings().removeClass('is-active');;
                        $('meta[name=theme-color]').attr('content', '#de1d1f');
                } if (currentIndex == 2) {
 
-
+                       $('li[class="3"]').addClass('is-active').siblings().removeClass('is-active');
                        $('meta[name=theme-color]').attr('content', '#349e37');
                } if (currentIndex == 3) {
 
-
+                       $('li[class="4"]').addClass('is-active').siblings().removeClass('is-active');
                        $('meta[name=theme-color]').attr('content', '#375ca4');
                } if (currentIndex == 4) {
 
-
+                       $('li[class="5"]').addClass('is-active').siblings().removeClass('is-active');
                        $('meta[name=theme-color]').attr('content', '#e3a8ae');
                } if (currentIndex == 5) {
 
-
+                       $('li[class="6"]').addClass('is-active').siblings().removeClass('is-active');
                        $('meta[name=theme-color]').attr('content', '#8dba75');
                }
                if (currentIndex == 6) {
 
-
+                       $('li[class="7"]').addClass('is-active').siblings().removeClass('is-active');
                        $('meta[name=theme-color]').attr('content', '#f6d56a');
                }
                     if (currentIndex == 7) {
 
-
+                            $('li[class="8"]').addClass('is-active').siblings().removeClass('is-active');
                              $('meta[name=theme-color]').attr('content', '#00bcd4');
                     }
                if (currentIndex == 8) {
@@ -1077,13 +1096,15 @@
                       $('a[href="#previous"]').css({"opacity": "0", "pointer-events": "none"});
                        $('meta[name=theme-color]').attr('content', '#ff4a56');
                }
+
             },
         });
     </script>
     <script> //scroll back to top on a new page
     $('a[href="#next"], a[href="#previous"]').on('click', function () {
-                var $target = $(this).parents('.container').first();
-                $('html, body').animate({ scrollTop: $target.offset().top }, 350);
+            $(window).scrollTop(0);
+                /*var $target = $(this).parents('.pagination').first();
+                $('html, body').animate({ scrollTop: $target.offset().top }, 350);*/
         });
     </script>
 
@@ -1092,10 +1113,10 @@
                 var alterClass = function () {
                         var ww = document.body.clientWidth;
                         if (ww < 769) {
-                                $('.container').removeClass('h-100');
+                                $('.main-content').removeClass('h-100');
 
                         } else if (ww >= 769) {
-                                $('.container').addClass('h-100');
+                                $('.main-content').addClass('h-100');
                         };
                 };
                 $(window).resize(function () {
