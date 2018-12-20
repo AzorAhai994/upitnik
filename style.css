@@ -288,7 +288,7 @@ th {
 
 ol,
 ul {
-  margin: 0 0 1em 2em;
+  /* margin: 0 0 1em 2em; */
 }
 
 ol > li,
@@ -360,12 +360,6 @@ textarea {
   line-height: 20px;
 }
 
-input,
-button,
-select,
-textarea {
-}
-
 label {
   display: block;
   margin-bottom: 5px;
@@ -377,6 +371,10 @@ table {
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.pagination ul {
+  /* margin: 0; */
 }
 
 ul,
@@ -660,6 +658,7 @@ form .question input[type="text"]:valid ~ label {
   -webkit-transform: translate(5px, -35px) scale(0.6);
   transform: translate(5px, -35px) scale(0.6);
 }
+
 /*STEPS PROGRES*/
 
 .multi-steps > li.is-active:before,
@@ -676,7 +675,7 @@ form .question input[type="text"]:valid ~ label {
 .multi-steps {
   display: table;
   table-layout: fixed;
-  width: 91%;
+  width: 100%;
 }
 .multi-steps > li {
   counter-increment: stepNum;
@@ -772,7 +771,7 @@ form .question input[type="text"]:valid ~ label {
     margin-right: 7px;
   }
   .multi-steps {
-    width: 80%;
+    width: 100%;
   }
   .wizard > .content > .body input {
     display: block;
