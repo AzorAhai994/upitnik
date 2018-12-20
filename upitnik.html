@@ -1032,7 +1032,7 @@
             transitionEffect: "slideLeft",
             autoFocus: true,
             enableAllSteps: true,
-
+//dynamically change theme-color
        onStepChanged: function (event, currentIndex, newIndex) {
                if (currentIndex == 0) {
 
@@ -1078,14 +1078,14 @@
             },
         });
     </script>
-    <script>
+    <script> //scroll back to top on a new page
     $('a[href="#next"], a[href="#previous"]').on('click', function () {
                 var $target = $(this).parents('.container').first();
                 $('html, body').animate({ scrollTop: $target.offset().top }, 350);
         });
     </script>
 
-    <script>
+    <script> //remove class .h-100
     jQuery(document).ready(function ($) {
                 var alterClass = function () {
                         var ww = document.body.clientWidth;
@@ -1099,12 +1099,11 @@
                 $(window).resize(function () {
                         alterClass();
                 });
-                //Fire it when the page first loads:
                 alterClass();
         });
     </script>
 
-    <script>
+    <script> //show nav buttons when scrolled 300px from top (phone only)
     $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
 
@@ -1115,7 +1114,7 @@
                 }
         });
     </script>
-    <script>
+    <script> //calculate the sum of selected radio buttons
         function calcscore() {
             var score = 0;
             $(".calc:checked").each(function () {
@@ -1129,7 +1128,7 @@
             });
         });
     </script>
-    <script>
+    <script> //calculate the sum of selected radio buttons II
         $(":radio").on("change", function () {
             var total = 0;
             $(":radio:checked").each(function () {
@@ -1143,18 +1142,8 @@
         });
     </script>
 
-    <script>
-        /*
-     $('a[href="next"]').click(function () {
-                if ($('input[name=1]:checked').length <= 0) {
-                        $("div"]").css('outline', '1px solid red');
-                }
-                else {
-                        $("#bordergen").css('outline', '1px solid #ccc');
-                }
-        });
-    </script>
-    <script>
+
+    <script> //POKUŠAJ VALIDACIJE FORME
         /*
         var form = $("#example-advanced-form").show();
 
