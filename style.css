@@ -65,6 +65,10 @@ body {
   border-color: #de1d1f;
 }
 
+.results ul {
+  column-count: 4;
+}
+
 .btn-outline-primary:hover {
   color: #fff;
   background-color: #de1d1f;
