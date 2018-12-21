@@ -794,6 +794,10 @@ form .question input[type="text"]:valid ~ label {
     left: 25px;
   }
 
+  .results > .container {
+    padding: 0;
+  }
+
   .calc.required {
     top: 10px !important;
     margin-right: 7px;
@@ -831,6 +835,9 @@ form .question input[type="text"]:valid ~ label {
     min-height: 1px;
     padding-right: 0px;
     padding-left: 0px;
+  }
+  .landing .col-lg-9 {
+    padding: 0;
   }
   .row {
     width: 100vw;
@@ -908,8 +915,12 @@ form .question input[type="text"]:valid ~ label {
   }
 }
 
-@media screen and (max-height: 700px) and (min-height: 631px) and (orientation: landscape) {
+/* @media screen and (max-height: 700px) and (min-height: 631px) and (orientation: landscape) {
   .container {
     height: auto !important;
   }
-}
+  .wizard > .actions > ul {
+    position: relative;
+    top: -138px;
+  }
+} */
