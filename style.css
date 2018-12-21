@@ -9,6 +9,13 @@ body {
   width: auto !important;
 }
 
+.results > .container {
+  background: url("pattern.jpg");
+  border-radius: 8px;
+  background-size: 56%;
+  padding: 0 3em;
+}
+
 .landing input {
   width: 30px;
 }
@@ -21,7 +28,7 @@ body {
   padding: 0;
 }
 .col--con {
-  background: url(pattern.jpg);
+  background: url("pattern.jpg");
   border-radius: 8px;
   background-size: 56%;
   padding: 0 3em;
