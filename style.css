@@ -262,6 +262,15 @@ th {
   border-radius: 5px;
 }
 
+.wizard > .content::after {
+  content: url("logo-sos.png");
+  position: absolute;
+  left: 2%;
+  bottom: 0%;
+  transform: scale(0.5);
+  transform-origin: left;
+}
+
 .wizard > .steps > ul > li,
 .wizard > .actions > ul > li {
   float: left;
@@ -792,6 +801,13 @@ form .question input[type="text"]:valid ~ label {
     position: relative;
     top: -13px;
     left: 25px;
+  }
+
+  .wizard > .content::after {
+    position: fixed;
+    left: 2%;
+    bottom: -2%;
+    background: white;
   }
 
   .results > .container {
